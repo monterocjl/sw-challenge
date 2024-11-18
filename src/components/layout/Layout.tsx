@@ -6,8 +6,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 export const Layout = () => {
   return (
     <div className='bg-main-bg text-white min-h-screen'>
-      <div className='flex flex-col min-h-screen max-w-[1440px] mx-auto px-6 md:px-10'>
-        <header className='py-6 md:py-11'>
+      <div className='flex flex-col min-h-screen'>
+        <header className='max-w-[1440px] mx-auto w-full px-6 md:px-10 py-6 md:py-11'>
           <div className='flex items-center justify-between'>
             <Link to='/' className='text-xl font-roboto-black'>
               MANOSOS SPA
@@ -15,13 +15,13 @@ export const Layout = () => {
 
             {/* Desktop Navigation */}
             <nav className='hidden md:flex gap-24 font-roboto-bold text-lg'>
-              <Link to='/people' className='hover:text-gray-300'>
+              <Link to='/people' className='hover:text-red-750'>
                 People
               </Link>
-              <Link to='/planets' className='hover:text-gray-300'>
+              <Link to='/planets' className='hover:text-red-750'>
                 Planets
               </Link>
-              <Link to='/starships' className='hover:text-gray-300'>
+              <Link to='/starships' className='hover:text-red-750'>
                 Starships
               </Link>
             </nav>
@@ -51,11 +51,11 @@ export const Layout = () => {
           </div>
         </header>
 
-        <main className='flex-grow'>
+        <main className='max-w-[1440px] mx-auto w-full flex-grow px-6 md:px-10'>
           <Outlet />
         </main>
 
-        <footer className='py-4 md:py-6 text-center text-xs md:text-sm text-gray-500 font-roboto-bold'>
+        <footer className='bg-blue-950 py-4 md:py-6 text-center text-xs md:text-sm text-gray-500 font-roboto-bold'>
           <p>© 2024 - MANOSOS SPA</p>
         </footer>
       </div>
