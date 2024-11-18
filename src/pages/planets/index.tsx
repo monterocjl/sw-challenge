@@ -1,3 +1,5 @@
+import { Planets } from "@/screens";
+
 export const PlanetsPage = () => {
-  return <div>PlanetsPage from pages</div>;
+  return <Planets />;
 };
