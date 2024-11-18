@@ -50,6 +50,8 @@ export default {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
+        "blue-950": "#0B0D0E",
+        "red-750": "#C4273A",
       },
       fontFamily: {
         "roboto-black": "Roboto_black",
@@ -58,8 +60,7 @@ export default {
         "roboto-light": "Roboto_light",
       },
       backgroundImage: {
-        "main-bg":
-          "linear-gradient(135deg, rgba(16,1,3,1) 0%, rgba(40,0,1,1) 100%)",
+        "main-bg": "linear-gradient(135deg, #000000 0%, rgba(40,0,1,1) 100%)",
       },
     },
   },
