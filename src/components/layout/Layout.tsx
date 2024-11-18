@@ -51,7 +51,7 @@ export const Layout = () => {
           </div>
         </header>
 
-        <main className='max-w-[1440px] mx-auto w-full flex-grow px-6 md:px-10'>
+        <main className='max-w-[1440px] mx-auto w-full flex-grow px-6 md:px-10 '>
           <Outlet />
         </main>
 

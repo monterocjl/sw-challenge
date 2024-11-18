@@ -1,3 +1,5 @@
+import { Starships } from "@/screens";
+
 export const StarshipsPage = () => {
-  return <div>StarshipsPage from pages</div>;
+  return <Starships />;
 };

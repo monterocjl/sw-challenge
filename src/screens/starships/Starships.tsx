@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
-import { usePeople } from "./hooks/usePeople";
+import { useStarships } from "./hooks/useStarships";
 
-export const People = () => {
+export const Starships = () => {
   const {
-    people,
+    starships,
     previousPage,
     nextPage,
     loading,
-    fetchPeople,
+    fetchStarships,
     handleSearch,
     inputValue,
     setInputValue,
-  } = usePeople();
+  } = useStarships();
 
   return (
     <div className='mx-0 md:mx-12 my-6'>
       <div className='flex justify-between flex-col md:flex-row gap-8'>
-        <h1 className='text-4xl font-bold'>PEOPLE</h1>
+        <h1 className='text-4xl font-bold'>STARSHIPS</h1>
 
         <div className='flex h-fit gap-2'>
           <input
@@ -41,20 +41,28 @@ export const People = () => {
       ) : (
         <>
           <div className='my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-            {people.map((person) => (
+            {starships.map((starship) => (
               <Link
-                key={person.id}
-                to={`/people/${person.id}`}
-                className='bg-blue-950 border-[3px] border-red-750 p-4 rounded-lg flex flex-col justify-between'
+                key={starship.url}
+                to={`/starships/${starship.id}`}
+                className='bg-blue-950 border-[3px] border-red-750 p-4 rounded-lg flex flex-col justify-between md:h-[138px]'
               >
-                <h2 className='text-xl font-bold'>{person.name}</h2>
-                <p>
-                  Year of birth:{" "}
-                  <span className='font-bold'>{person.birth_year}</span>
-                </p>
-                <p>
-                  Gender: <span className='font-bold'>{person.gender}</span>
-                </p>
+                <h2 className='text-xl font-bold'>{starship.name}</h2>
+                <div>
+                  <div className='flex gap-2'>
+                    <p className='font-roboto-light'>Length: </p>
+                    <span className='font-roboto-bold'>{starship.length}</span>
+                  </div>
+                  <div className='flex gap-2'>
+                    <p className='font-roboto-light'>Model: </p>
+                    <span
+                      className='font-roboto-bold overflow-hidden line-clamp-1'
+                      style={{ WebkitLineClamp: 1 }}
+                    >
+                      {starship.model}
+                    </span>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
@@ -66,7 +74,7 @@ export const People = () => {
                   ? "text-gray-500 hover:text-gray-500"
                   : "text-white hover:text-red-750"
               }`}
-              onClick={() => previousPage && fetchPeople(previousPage)}
+              onClick={() => previousPage && fetchStarships(previousPage)}
               disabled={!previousPage}
             >
               &lt; atrás
@@ -77,7 +85,7 @@ export const People = () => {
                   ? "text-gray-500 hover:text-gray-500"
                   : "text-white hover:text-red-750"
               }`}
-              onClick={() => nextPage && fetchPeople(nextPage)}
+              onClick={() => nextPage && fetchStarships(nextPage)}
               disabled={!nextPage}
             >
               siguiente &gt;
