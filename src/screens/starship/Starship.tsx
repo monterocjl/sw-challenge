@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { usePlanet } from "./hooks/usePlanet";
 
 export const Starship = () => {
@@ -8,6 +9,12 @@ export const Starship = () => {
 
   return (
     <div className='mx-0 md:mx-12 my-6'>
+      <Link
+        to='/starships'
+        className='underline text-xs text-red-750 hover:text-white'
+      >
+        <p className='mb-4'>Back to starships</p>
+      </Link>
       <h1 className='text-4xl font-bold mb-8'>{starship.name}</h1>
       <div className='mb-8'>
         <div className='w-fit flex justify-between'>

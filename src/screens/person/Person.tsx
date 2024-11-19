@@ -10,6 +10,12 @@ export const Person = () => {
 
   return (
     <div className='mx-0 md:mx-12 my-6'>
+      <Link
+        to='/people'
+        className='underline text-xs text-red-750 hover:text-white'
+      >
+        <p className='mb-4'>Back to people</p>
+      </Link>
       <h1 className='text-4xl font-bold mb-8'>{person.name}</h1>
       <div className='mb-8'>
         <div className='w-fit flex justify-between'>
@@ -56,7 +62,7 @@ export const Person = () => {
               </div>
             </div>
             <Link
-              to='#'
+              to={`/planets/${homeworld.id}`}
               className='underline text-sm inline-flex items-center hover:text-red-750 transition-colors'
             >
               Go to the planet &gt;

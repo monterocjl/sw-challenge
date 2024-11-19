@@ -10,6 +10,12 @@ export const Planet = () => {
 
   return (
     <div className='mx-0 md:mx-12 my-6'>
+      <Link
+        to='/planets'
+        className='underline text-xs text-red-750 hover:text-white'
+      >
+        <p className='mb-4'>Back to planets</p>
+      </Link>
       <h1 className='text-4xl font-bold mb-8'>{planet.name}</h1>
       <div className='mb-8'>
         <div className='w-fit flex justify-between'>
