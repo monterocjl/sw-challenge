@@ -18,35 +18,35 @@ export const Planet = () => {
       </Link>
       <h1 className='text-4xl font-bold mb-8'>{planet.name}</h1>
       <div className='mb-8'>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Rotation period:</p>
           <p className='font-roboto-bold'>{planet.rotation_period}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Orbital period:</p>
           <p className='font-roboto-bold'>{planet.orbital_period}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Diameter:</p>
           <p className='font-roboto-bold'>{planet.diameter}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Climate:</p>
           <p className='font-roboto-bold'>{planet.climate}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Gravity:</p>
           <p className='font-roboto-bold'>{planet.gravity}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Terrain:</p>
           <p className='font-roboto-bold'>{planet.terrain}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Surface water:</p>
           <p className='font-roboto-bold'>{planet.surface_water}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Population:</p>
           <p className='font-roboto-bold'>{planet.population}</p>
         </div>

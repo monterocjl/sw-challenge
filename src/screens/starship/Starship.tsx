@@ -17,55 +17,55 @@ export const Starship = () => {
       </Link>
       <h1 className='text-4xl font-bold mb-8'>{starship.name}</h1>
       <div className='mb-8'>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Model:</p>
           <p className='font-roboto-bold'>{starship.model}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Manufacturer:</p>
           <p className='font-roboto-bold'>{starship.manufacturer}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Cost in credits:</p>
           <p className='font-roboto-bold'>{starship.cost_in_credits}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Length:</p>
           <p className='font-roboto-bold'>{starship.length}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>
             Max atmosphering speed:
           </p>
           <p className='font-roboto-bold'>{starship.max_atmosphering_speed}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Crew:</p>
           <p className='font-roboto-bold'>{starship.crew}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Passengers:</p>
           <p className='font-roboto-bold'>{starship.passengers}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Cargo capacity:</p>
           <p className='font-roboto-bold'>{starship.cargo_capacity}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Consumables:</p>
           <p className='font-roboto-bold'>{starship.consumables}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>
             Hyperdrive rating:
           </p>
           <p className='font-roboto-bold'>{starship.hyperdrive_rating}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>MGLT:</p>
           <p className='font-roboto-bold'>{starship.MGLT}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Starship class:</p>
           <p className='font-roboto-bold'>{starship.starship_class}</p>
         </div>
