@@ -18,27 +18,27 @@ export const Person = () => {
       </Link>
       <h1 className='text-4xl font-bold mb-8'>{person.name}</h1>
       <div className='mb-8'>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Year of Birth:</p>
           <p className='font-roboto-bold'>{person.birth_year}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Height:</p>
           <p className='font-roboto-bold'>{person.height}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Mass:</p>
           <p className='font-roboto-bold'>{person.mass}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Hair color:</p>
           <p className='font-roboto-bold'>{person.hair_color}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Skin color:</p>
           <p className='font-roboto-bold'>{person.skin_color}</p>
         </div>
-        <div className='w-fit flex justify-between'>
+        <div className='w-full md:w-fit flex justify-between'>
           <p className='font-roboto-light md:min-w-[250px]'>Eye color:</p>
           <p className='font-roboto-bold'>{person.eye_color}</p>
         </div>
